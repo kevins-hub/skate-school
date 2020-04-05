@@ -1,0 +1,412 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #5ea4ff;
+    z-index:1;
+}
+
+.body-container{
+    background-color: white;
+    margin: 50px;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+h1 {
+    /*
+    color: #000000;
+    */
+    color: #ff4a44;
+    height:140;
+    width:60;
+    text-align:center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top:40px;
+}
+
+h2{
+    height: 140;
+    width: 60;
+    text-align: center;
+    padding-top:40px;
+}
+.logo {
+    color: #ff4a44;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+}
+
+#navbar {
+    position: fixed;
+    text-align:left;
+    padding:8px;
+    top: 0px;
+    left: 48px;
+    right:48px;
+    z-index:5;
+    background-color: #4272b3;
+    width: auto;
+    margin-top: 0;
+}
+
+/*
+#navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 60px;
+}
+*/
+
+/*
+nav{
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+}
+*/
+
+li{
+    display:inline;
+    position:relative;
+    margin-right:10;
+    margin-left:10;
+    padding: 10px 20px;
+}
+
+a{
+    /*
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    */
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+a:hover{
+    color: #ff7b23;    
+}
+
+img{
+    width:100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.greeting-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.logo-container{
+    position:relative;
+    text-align: center;
+    background-color: #5ea4ff; 
+    font-family:'Permanent Marker', cursive;  
+}
+
+.sm-logo{
+    float:right;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    margin-right: 40px;
+    color: white;
+    filter: invert(100%);;
+}
+
+#logo-pic{
+    height: 300px;
+    width: 600px;
+}
+
+.section_header{
+    color: #ff7b23;;
+    height:140;
+    width:60;
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.service_header{
+    color: #ff7b23;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*
+.canvas{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    width:100%;
+    padding-top: 300px;
+    background: linear-gradient(rgba(204, 0, 255, 0.5), rgba(204, 0, 255, 0.5)), url("img/meeting.jpg")
+}
+*/
+#greeting-pic{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-top:0;
+    padding-bottom: 20px;
+}
+
+#greeting-txt-box {
+    position: absolute;
+    background-color: rgba(112, 112, 112, 0.65);;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+}
+
+#greeting-sign-up-btn{
+    position: relative;
+    bottom: 20%;
+    background-color: orange;
+}
+
+
+#welcome{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:3;
+}
+
+#welcome-tl{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome-txt{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo-txt{
+    position:absolute;
+    text-align: center;
+    font-size: 40px;
+    top: 25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo-tl{
+    position:absolute;
+    text-align: center;
+    font-size: 14px;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, 50%);
+}
+
+#about-blurb{
+    padding:20px;
+    margin-top: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bd_pics {
+    display:block;
+    max-width: 600px;
+    min-height: 200px;
+    max-height:300px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column-2 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row-2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .media-pics {
+      display: block;
+      box-sizing: content-box;
+      padding:60px;
+      margin-bottom: 20px;
+  }
+
+/*
+h2{
+    color: #000000;
+    font-family: Calibri;
+    position: relative;
+    letter-spacing: 1.5px;
+    top: 100px;
+}
+
+ul{
+    color: #555;
+    position: absolute;
+    top:0;
+}
+
+li{
+    display:inline;
+    float: left;
+    top:0;
+}
+
+body {
+    color: #000000;
+    font-family: Calibri;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+    background: #ffff64;
+}
+
+.Greeting {
+    position: relative;
+    top:100px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+
+}
+
+.greet_portrait{
+    float:left;
+    width:30%;
+
+}
+*/
