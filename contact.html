@@ -8,49 +8,54 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="body-container">
-            <section id="navbar">
-                <nav>
-                    <li><a href="index.html" class="logo">KEEPSKATING</a></li>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="pricing.html">PRICING</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="media.html">MEDIA</a></li>
-                    <li><a href="http://www.instagram.com"><img src="img/ig-logo.png" class="sm-logo"></a></li>
-                </nav>
-            </section>
-            <h2>Contact</h2>
-            <section id="contact">
-                <div class="container">
-                    <div style="text-align:center">
-                    <h2>Contact Us</h2>
-                    <p>Leave your info and one of our skate instructors will reach out to you!</p>
-                    </div>
-                    <div class="row-2">
-                    <div class="column-2">
-                        <img src="img/pic-3.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <form action="/action_page.php">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                        <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                    </div>
+
+        <section class="navbar">
+            <nav id="other-nav">
+                <li><a href="index.html" class="logo">KEEPSKATING</a></li>
+                <li class="op-links"><a href="index.html">HOME</a></li>
+                <li class="op-links"><a href="pricing.html">LESSONS</a></li>
+                <li class="op-links"><a href="about.html">ABOUT</a></li>
+                <li class="op-links"><a href="contact.html">CONTACT</a></li>
+                <li class="op-links"><a href="media.html">MEDIA</a></li>
+                <li class="op-links"><a href="http://www.instagram.com"><img src="img/ig-logo.png" class="sm-logo"></a></li>
+            </nav>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>Leave your info and one of our skate instructors will reach out to you!</p>
                 </div>
-            </section>
-        </div>
+                <div class="row-2">
+                <div class="column-2">
+                    <img src="img/sf_ollie_old.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="/contact-form-handler.php" method = "post"> 
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email Address..">
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" name="number" placeholder="Your Phone Number..">
+
+                
+                    <label for="lesson-types">I'm interested in...</label>
+                    <select id="lesson-type" name="lesson-type">
+                        <option value="virtual">Virtual Lessons</option>
+                        <option value="private">In-Person Private Lessons</option>
+                        <option value="group">Undecided</option>
+                    </select>
+                    <label for="message">Tell us more (optional)</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+
     </body>
 </html>

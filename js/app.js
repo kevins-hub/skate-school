@@ -16,3 +16,56 @@ function myFunction() {
   }
 }
 */
+
+/*
+console.log("Hello World");
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 200) {
+      //document.getElementsByClassName("hp-links").style.color = "black";
+
+	    $(".hp-links").css("color" , "black");
+	  }
+
+	  else{
+      $(".hp-links").css("color" , "white");  
+      //document.getElementsByClassName("hp-links").style.color = "white";
+	
+	  }
+  })
+})
+
+*/
+
+window.onscroll = () => {
+  const nav = document.querySelector('#home-nav');
+  const hlink = document.querySelector('#hp-h-link');
+  const llink = document.querySelector('#hp-l-link');
+  const alink = document.querySelector('#hp-a-link');
+  const clink = document.querySelector('#hp-c-link');
+  const mlink = document.querySelector('#hp-m-link');
+  const iglink = document.querySelector('#hp-ig-link');
+  if(this.scrollY <= 10) {
+      nav.className = '';
+      hlink.className = '';
+      llink.className = '';
+      alink.className = '';
+      clink.className = '';
+      mlink.className = '';
+      iglink.className = '';
+
+      //navlinks.className = 'hp-links';
+  } else{
+      nav.className = 'scroll';
+      hlink.className = 'scroll';
+      llink.className = 'scroll';
+      alink.className = 'scroll';
+      clink.className = 'scroll';
+      mlink.className = 'scroll';
+      iglink.className = 'scroll';
+
+      //navlinks.className='op-links';
+  }
+};
