@@ -33,7 +33,9 @@ section {
     clear: both;
 }
 
-
+p {
+    text-indent: 0px;
+}
 h1 {
     /*
     color: #000000;
@@ -75,10 +77,30 @@ h2{
     margin-top: 0;
 }
 
+
+.testimonial-container {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.testi-row {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 240px;
+    /*
+    border-style: groove;
+    */
+    background-color: #fffff0;
+}
+
 .testi-col {
     float:left;
     width: 33.33%;
     padding: 20px;
+    line-height: 24px;
 }
 
 .testi-row:after {
@@ -87,6 +109,55 @@ h2{
     clear: both;
 }
 
+.instructors {
+    margin-left: 30px;
+    margin-right: 30px; 
+}
+
+.instruct-pic{
+    float:left;
+    max-height: 200px;
+    width: auto;
+    margin-right:20px;
+}
+
+.instruct-bio{
+    padding: 20px;
+    display: inline;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.sub-title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lesson-bd{
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.lesson-container{
+    min-height: 240px;
+    border-style: groove;
+    border-color: grey;
+    margin-bottom: 20px;
+}
+.lesson-title{
+    float: left;
+    text-decoration: bold;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.price-line{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 18px;
+}
 /*
 #navbar a{
     float: left;
@@ -647,6 +718,10 @@ img{
       box-sizing: content-box;
       padding:60px;
       margin-bottom: 20px;
+  }
+
+  .med-pics{
+      margin-bottom: 10px;
   }
 
 /*
